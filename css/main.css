@@ -21,13 +21,18 @@ img {
 
 .container {
   max-width: 1200px;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 h2 {
   margin-bottom: 1em;
+}
+
+h4 {
+  color: red;
+  margin-bottom: 1rem;
 }
 
 button {
@@ -210,7 +215,7 @@ header {
   }
 }
 
-@media (max-width: 25em) {
+@media (max-width: 28em) {
   .navbar__logo {
     width: 5em;
     height: 5em;
@@ -286,6 +291,13 @@ header {
 }
 
 @media (min-width: 62em) {
+  .banner__img {
+    position: absolute;
+    margin-top: -2em;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
   .banner__heading {
     text-align: initial;
     margin: 0;
@@ -302,9 +314,9 @@ header {
   }
 }
 
-@media (max-width: 25em) {
+@media (max-width: 28em) {
   .banner__heading h1 {
-    margin-top: 10em;
+    margin-top: 420px;
   }
 }
 
@@ -321,22 +333,22 @@ header {
   margin-bottom: 3em;
 }
 
-.things__dec {
+/* .things__dec {
   position: absolute;
   top: 0;
   left: 0;
   transform: translateX(-60%);
   z-index: -1;
-}
+} */
 
-.things__dec:nth-child(2) {
+/* .things__dec:nth-child(2) {
   top: initial;
   left: initial;
   bottom: 15%;
   right: 0;
   transform: translateX(60%);
   z-index: -1;
-}
+} */
 
 .things__item {
   margin: 3em 0;
@@ -403,14 +415,14 @@ header {
   color: var(--gray);
 }
 
-.works__dec {
+/* .works__dec {
   position: absolute;
   top: 0;
   left: 0;
   transform: translateX(-60%);
   z-index: -1;
-}
-.works__dec:nth-child(2) {
+} */
+/* .works__dec:nth-child(2) {
   position: absolute;
   top: initial;
   left: initial;
@@ -418,7 +430,7 @@ header {
   right: 0;
   transform: translateX(60%);
   z-index: -1;
-}
+} */
 
 .works__img--single {
   margin: 2em 0;
@@ -521,13 +533,13 @@ header {
   transition: var(--smooth);
 }
 
-.footer__dec {
+/* .footer__dec {
   position: absolute;
   bottom: 0;
   left: 0;
   transform: translateX(-45%);
   z-index: -1;
-}
+} */
 
 @media (min-width: 62em) {
   .footer__img {
@@ -546,8 +558,8 @@ header {
   }
 }
 
-@media (max-width: 25em) {
+@media (max-width: 28em) {
   .footer__heading h1 {
-    margin-top: 8em;
+    margin-top: 15em;
   }
 }
